@@ -19,3 +19,12 @@ mv com.googlecode.iterm2.plist  com.googlecode.iterm2.private.plist ~/Library/Pr
 
 # iTerm2: Open iTerm2 → Preferences → Profiles → Text and set Font to MesloLGS NF. Alternatively, type p10k configure and answer Yes when asked whether to install Meslo Nerd Font.
 ```
+
+# Configure .ssh/config
+```
+cat << EOF >> $HOME/.ssh/config
+Host *.zz.zebrastack.com
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+EOF
+```
