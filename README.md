@@ -1,5 +1,5 @@
 # dotfiles
-Common dotfiles for MacOS &amp; Linux
+Common dotfiles for MacOS which i use daily for my work
 
 # Install oh-my-zsh and powerlevel10k plugin
 ```
