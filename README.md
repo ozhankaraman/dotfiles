@@ -15,6 +15,7 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regula
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+mv com.googlecode.iterm2.plist  com.googlecode.iterm2.private.plist ~/Library/Preferences/
 
 # iTerm2: Open iTerm2 → Preferences → Profiles → Text and set Font to MesloLGS NF. Alternatively, type p10k configure and answer Yes when asked whether to install Meslo Nerd Font.
 ```
