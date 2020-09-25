@@ -28,3 +28,5 @@ Host *.zz.zebrastack.com
     UserKnownHostsFile /dev/null
 EOF
 ```
+
+bugfixten
