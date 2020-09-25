@@ -8,6 +8,7 @@ tap 'homebrew/core'
 tap 'ldez/tap'
 tap 'buildpack/tap'
 tap 'homebrew/cask-fonts'
+tap 'starkandwayne/cf'
 
 # System tools
 brew 'gettext'
@@ -78,6 +79,7 @@ brew 'speedtest-cli'
 brew 'vim'
 cash 'gh'
 brew 'terraform@0.13'
+brew 'starkandwayne/cf/safe'
 
 # Commit signing
 brew 'gnupg'
