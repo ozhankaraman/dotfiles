@@ -1,6 +1,7 @@
 # dotfiles
 Common dotfiles for MacOS which i use daily for my work
 
+
 # Install oh-my-zsh and powerlevel10k plugin
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
