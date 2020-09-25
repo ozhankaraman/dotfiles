@@ -101,6 +101,7 @@ brew 'helmfile'
 brew 'k9s'
 brew 'openshift-cli'
 brew 'tektoncd-cli'
+brew 'kind'
 
 # Fun tools
 brew 'asciinema'
