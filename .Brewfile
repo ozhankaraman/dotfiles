@@ -77,6 +77,7 @@ brew 'hey'
 brew 'speedtest-cli'
 brew 'vim'
 cash 'gh'
+brew 'terraform@0.13'
 
 # Commit signing
 brew 'gnupg'
