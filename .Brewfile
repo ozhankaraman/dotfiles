@@ -32,6 +32,7 @@ brew 'ncurses'
 brew 'pv'
 brew 'unrar'
 brew 'shfmt'
+brew 'MisterTea/et/et'
 
 # Development & Power Tools
 cask 'iterm2'
