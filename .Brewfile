@@ -9,6 +9,7 @@ tap 'ldez/tap'
 tap 'buildpack/tap'
 tap 'homebrew/cask-fonts'
 tap 'starkandwayne/cf'
+tap 'tektoncd/tools'
 
 # System tools
 brew 'gettext'
@@ -99,9 +100,9 @@ brew 'calicoctl'
 brew 'helm'
 brew 'helmfile'
 brew 'k9s'
-brew 'openshift-cli'
-brew 'tektoncd-cli'
+brew 'tektoncd/tools/tektoncd-cli'
 brew 'kind'
+
 
 # Fun tools
 brew 'asciinema'
