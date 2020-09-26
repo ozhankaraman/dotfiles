@@ -82,6 +82,7 @@ brew 'vim'
 cash 'gh'
 brew 'terraform@0.13'
 brew 'starkandwayne/cf/safe'
+brew 'fluxctl'
 
 # Commit signing
 brew 'gnupg'
