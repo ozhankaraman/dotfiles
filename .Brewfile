@@ -57,6 +57,7 @@ brew 'python@3.8'
 brew 'pipx'
 brew 'openssl'
 brew 'openssh'
+brew 'iperf'
 brew 'the_silver_searcher'
 brew 'ripgrep'
 brew 'tree'
@@ -103,7 +104,6 @@ brew 'helmfile'
 brew 'k9s'
 brew 'tektoncd/tools/tektoncd-cli'
 brew 'kind'
-
 
 # Fun tools
 brew 'asciinema'
