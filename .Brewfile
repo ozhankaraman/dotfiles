@@ -10,6 +10,7 @@ tap 'buildpack/tap'
 tap 'homebrew/cask-fonts'
 tap 'starkandwayne/cf'
 tap 'tektoncd/tools'
+tap 'argoproj/tap'
 
 # System tools
 brew 'gettext'
@@ -84,6 +85,7 @@ cash 'gh'
 brew 'terraform@0.13'
 brew 'starkandwayne/cf/safe'
 brew 'fluxctl'
+brew 'argoproj/tap/argocd'
 
 # Commit signing
 brew 'gnupg'
