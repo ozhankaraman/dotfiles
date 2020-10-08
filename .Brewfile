@@ -35,6 +35,7 @@ brew 'pv'
 brew 'unrar'
 brew 'shfmt'
 brew 'MisterTea/et/et'
+brew 'httpie'
 
 # Development & Power Tools
 cask 'iterm2'
