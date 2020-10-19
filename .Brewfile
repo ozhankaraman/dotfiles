@@ -88,6 +88,7 @@ brew 'terraform@0.13'
 brew 'starkandwayne/cf/safe'
 brew 'fluxctl'
 brew 'argoproj/tap/argocd'
+brew 'kafkacat'
 
 # Commit signing
 brew 'gnupg'
