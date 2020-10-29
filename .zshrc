@@ -166,3 +166,6 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 #alias ls="ls -l --color"
 alias ls="ls --quoting-style=literal --color"
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+
+#Add python local bin to PATH
+export PATH=$PATH:$HOME/.local/bin
