@@ -36,6 +36,7 @@ brew 'unrar'
 brew 'shfmt'
 brew 'MisterTea/et/et'
 brew 'httpie'
+brew 'dog'
 cask 'easy-move-plus-resize'
 
 # Development & Power Tools
