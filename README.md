@@ -1,6 +1,14 @@
 # dotfiles
 Common dotfiles for MacOS which i use daily for my work
 
+# Install Homebrew
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Turn off brew analytics
+brew analytics off
+```
+
+# Install iterm2 because BigSur does not have terminal
 
 # Install oh-my-zsh and powerlevel10k plugin
 ```
