@@ -40,7 +40,7 @@ brew 'dog'
 cask 'easy-move-plus-resize'
 
 # Development & Power Tools
-cask 'iterm2'
+# cask 'iterm2'
 cask 'visual-studio-code'
 brew 'bash'
 brew 'bash-completion'
