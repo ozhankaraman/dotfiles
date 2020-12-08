@@ -97,7 +97,7 @@ cask 'keybase'
 # Containers
 brew 'kubernetes-cli'
 brew 'kubectx'
-brew 'docker-machine-driver-hyperkit'
+# brew 'docker-machine-driver-hyperkit'
 brew 'skaffold'
 brew 'kustomize'
 brew 'cfssl'
