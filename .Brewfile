@@ -10,7 +10,6 @@ tap 'buildpack/tap'
 tap 'homebrew/cask-fonts'
 tap 'starkandwayne/cf'
 tap 'tektoncd/tools'
-tap 'argoproj/tap'
 
 # System tools
 brew 'gettext'
