@@ -87,7 +87,7 @@ cask 'gh'
 brew 'terraform@0.13'
 brew 'starkandwayne/cf/safe'
 brew 'fluxctl'
-brew 'argoproj/tap/argocd'
+brew 'argocd'
 brew 'kafkacat'
 
 # Commit signing
