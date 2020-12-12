@@ -92,7 +92,6 @@ brew 'kafkacat'
 
 # Commit signing
 brew 'gnupg'
-cask 'keybase'
 
 # Containers
 brew 'kubernetes-cli'
@@ -101,7 +100,7 @@ brew 'kubectx'
 brew 'skaffold'
 brew 'kustomize'
 brew 'cfssl'
-cask 'docker' # docker for desktop
+# cask 'docker' # docker for desktop
 brew 'pack'
 brew 'calicoctl'
 brew 'helm'
@@ -131,4 +130,4 @@ cask 'font-hack-nerd-font'
 cask 'keepassxc'
 cask 'vlc'
 cask 'viscosity'
-cask 'virtualbox'
+#cask 'virtualbox'
