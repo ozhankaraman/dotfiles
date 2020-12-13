@@ -17,7 +17,8 @@ brew bundle install --file=$HOME/.Brewfile
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 chmod 755 /usr/local/share/zsh /usr/local/share/zsh/site-functions
-mv .zshrc-ok .zshrc
+rm .zshrc
+wget -O $HOME/.zshrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.zshrc
 ```
 
 # Install MesloLGS fonts for iterm2 Terminal
