@@ -31,6 +31,11 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%2
 # iTerm2: Open iTerm2 → Preferences → Profiles → Text and set Font to MesloLGS NF. Alternatively, type p10k configure and answer Yes when asked whether to install Meslo Nerd Font.
 ```
 
+# Install .vimrc
+```
+wget -O $HOME/.vimrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.vimrc
+```
+
 # Configure .ssh/config
 ```
 cat << EOF >> $HOME/.ssh/config
