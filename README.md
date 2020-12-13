@@ -21,14 +21,15 @@ rm .zshrc
 wget -O $HOME/.zshrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.zshrc
 ```
 
-# Install MesloLGS fonts for iterm2 Terminal
+# Download & Install(double click) MesloLGS fonts for iterm2 Terminal
 ```
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
 
-# iTerm2: Open iTerm2 → Preferences → Profiles → Text and set Font to MesloLGS NF. Alternatively, type p10k configure and answer Yes when asked whether to install Meslo Nerd Font.
+# iTerm2: Open iTerm2 → Preferences → Profiles → Text and set Font to MesloLGS NF. 
+# Restart terminal to complete powerlevel 10k install
 ```
 
 # Install .vimrc
