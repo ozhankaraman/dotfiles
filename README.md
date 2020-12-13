@@ -51,6 +51,14 @@ bugfixten
 # Install Krew
 https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 ```
+(
+  set -x; cd "$(mktemp -d)" &&
+  curl -fsSLO "https://github.com/kubernetes-sigs/krew/releases/latest/download/krew.tar.gz" &&
+  tar zxvf krew.tar.gz &&
+  KREW=./krew-"$(uname | tr '[:upper:]' '[:lower:]')_$(uname -m | sed -e 's/x86_64/amd64/' -e 's/arm.*$/arm/')" &&
+  "$KREW" install krew
+)
+
 kubectl krew update
 kubectl krew install ctx ns tree view-utilization view-allocations access-matrix who-can whoami neat get-all
 ```
