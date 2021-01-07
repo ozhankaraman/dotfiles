@@ -90,7 +90,6 @@ brew 'starkandwayne/cf/safe'
 brew 'fluxctl'
 brew 'argocd'
 brew 'kafkacat'
-cask 'cyberduck'
 
 # Commit signing
 brew 'gnupg'
