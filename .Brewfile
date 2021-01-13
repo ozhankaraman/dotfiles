@@ -36,7 +36,6 @@ brew 'shfmt'
 brew 'MisterTea/et/et'
 brew 'httpie'
 brew 'dog'
-brew 's3cmd'
 cask 'easy-move-plus-resize'
 
 # Development & Power Tools
