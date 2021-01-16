@@ -161,11 +161,16 @@ export KUBECONFIG="/Users/ozhan/.kube/config:/Users/ozhan/.kube/t2-kubeconfig:/U
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+PATH="/usr/local/opt/openssl/bin:$PATH"
+PATH="/usr/local/opt/gettext/bin:$PATH"
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 #alias ls="ls -l --color"
 alias ls="ls --quoting-style=literal --color"
-export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+#export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+
+#Add python local bin to PATH
+#export PATH=$PATH:$HOME/.local/bin:$HOME/go/bin
 
 #Add python local bin to PATH
 export PATH=$PATH:$HOME/.local/bin
