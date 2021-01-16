@@ -84,23 +84,19 @@ brew 'hey'
 brew 'speedtest-cli'
 brew 'vim'
 cask 'gh'
-brew 'terraform@0.13'
+brew 'terraform@0.14'
 brew 'starkandwayne/cf/safe'
 brew 'fluxctl'
 brew 'argocd'
 brew 'kafkacat'
-
-# Commit signing
 brew 'gnupg'
 
 # Containers
 brew 'kubernetes-cli'
 brew 'kubectx'
-# brew 'docker-machine-driver-hyperkit'
 brew 'skaffold'
 brew 'kustomize'
 brew 'cfssl'
-# cask 'docker' # docker for desktop
 brew 'calicoctl'
 brew 'helm'
 brew 'helmfile'
@@ -129,4 +125,9 @@ cask 'font-hack-nerd-font'
 cask 'keepassxc'
 cask 'vlc'
 cask 'viscosity'
-#cask 'virtualbox'
+
+# iMac Tools who needs high CPU/Mem Consumption
+# cask 'docker' # docker for desktop
+# brew 'docker-machine-driver-hyperkit'
+# cask 'multipass'
+# cask 'virtualbox'
