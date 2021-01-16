@@ -125,6 +125,7 @@ cask 'font-hack-nerd-font'
 cask 'keepassxc'
 cask 'vlc'
 cask 'viscosity'
+cask 'sublime-text'
 
 # iMac Tools who needs high CPU/Mem Consumption
 # cask 'docker' # docker for desktop
