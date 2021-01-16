@@ -1,7 +1,7 @@
 # dotfiles
 Common dotfiles for MacOS which i use daily for my work
 
-# Install Xcode from App Store
+*  Install Xcode from App Store
 # Install Microsoft Word, Excel bundle
 # Download SimpleMind from https://simpleapps.eu/download/full-edition/simplemind-pro-mac/
 # Show Status Bar: defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
