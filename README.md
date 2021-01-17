@@ -1,20 +1,9 @@
 # dotfiles
 Common dotfiles for MacOS which i use daily for my work
 
-* Install Xcode with command below:
-```
-xcode-select --install
-```
-* Install Microsoft Word, Excel bundle from: www.office.com
-* Download SimpleMind from: https://simpleapps.eu/download/full-edition/simplemind-pro-mac/
-* Show Status Bar: defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
-* Install Moom from Apple Store
-* Enable hot corners on top right for sleep
-* Set Keyboard Shortcuts - 
-  * Move focus to next window  
-
 # Install Homebrew
 ```bash
+xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # Turn off brew analytics
 brew analytics off
@@ -62,5 +51,14 @@ kubectl krew update
 kubectl krew install ctx ns tree view-utilization view-allocations access-matrix who-can whoami neat get-all
 ```
 
+# Last Actions
+
+* Install Microsoft Word, Excel bundle from: www.office.com
+* Download SimpleMind from: https://simpleapps.eu/download/full-edition/simplemind-pro-mac/
+* Show Status Bar: defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+* Install Moom from Apple Store
+* Enable hot corners on top right for sleep
+* Set Keyboard Shortcuts - 
+  * Move focus to next window  
 * Add Easy Move+Resize, Moom, Viscosity Programs to MacOS User Login Items for autostart up when user logons
 
