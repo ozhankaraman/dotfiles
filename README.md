@@ -10,7 +10,7 @@ xcode-select --install
 * Show Status Bar: defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 * Enable hot corners on top right for sleep
 * Set Keyboard Shortcuts - 
- * Move focus to next window  
+  * Move focus to next window  
 
 # Install Homebrew
 ```
