@@ -131,4 +131,4 @@ cask 'sublime-text'
 # cask 'docker' # docker for desktop
 # brew 'docker-machine-driver-hyperkit'
 # cask 'multipass'
-# cask 'virtualbox'
+# brew 'virtualbox'
