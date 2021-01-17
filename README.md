@@ -62,5 +62,5 @@ kubectl krew update
 kubectl krew install ctx ns tree view-utilization view-allocations access-matrix who-can whoami neat get-all
 ```
 
-# Add Easy Move+Resize, Moom, Viscosity Programs to MacOS User Login Items for autostart up when user logons
+* Add Easy Move+Resize, Moom, Viscosity Programs to MacOS User Login Items for autostart up when user logons
 
