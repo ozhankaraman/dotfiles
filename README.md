@@ -8,6 +8,7 @@ xcode-select --install
 * Install Microsoft Word, Excel bundle from: www.office.com
 * Download SimpleMind from: https://simpleapps.eu/download/full-edition/simplemind-pro-mac/
 * Show Status Bar: defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+* Install Moom from Apple Store
 * Enable hot corners on top right for sleep
 * Set Keyboard Shortcuts - 
   * Move focus to next window  
@@ -28,17 +29,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 chmod 755 /usr/local/share/zsh /usr/local/share/zsh/site-functions
 rm .zshrc
 wget -O $HOME/.zshrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.zshrc
-```
-
-# Download & Install(double click) MesloLGS fonts for iterm2 Terminal
-```
-https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
-https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
-https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
-https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
-
-# iTerm2: Open iTerm2 → Preferences → Profiles → Text and set Font to MesloLGS NF. 
-# Restart terminal to complete powerlevel 10k install
 ```
 
 # Install .vimrc
@@ -71,3 +61,6 @@ https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 kubectl krew update
 kubectl krew install ctx ns tree view-utilization view-allocations access-matrix who-can whoami neat get-all
 ```
+
+# Add Easy Move+Resize, Moom, Viscosity Programs to MacOS User Login Items for autostart up when user logons
+
