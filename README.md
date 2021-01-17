@@ -62,3 +62,8 @@ kubectl krew install ctx ns tree view-utilization view-allocations access-matrix
   * Move focus to next window  
 * Add Easy Move+Resize, Moom, Viscosity Programs to MacOS User Login Items for autostart up when user logons
 
+# Moom Setup
+* MacBook 12"
+  * Custom > define window size 16x16 | Move and Zoom > ⌘L => Empty one pixel around perimeter and fill 15x15
+* iMac 27"
+  *
