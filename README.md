@@ -13,7 +13,7 @@ xcode-select --install
   * Move focus to next window  
 
 # Install Homebrew
-```
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # Turn off brew analytics
 brew analytics off
@@ -22,7 +22,7 @@ brew bundle install --file=$HOME/.Brewfile
 ```
 
 # Install oh-my-zsh and powerlevel10k plugin
-```
+```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 chmod 755 /usr/local/share/zsh /usr/local/share/zsh/site-functions
@@ -47,7 +47,7 @@ wget -O $HOME/.vimrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/mas
 ```
 
 # Configure .ssh/config
-```
+```bash
 cat << EOF >> $HOME/.ssh/config
 Host *.zz.zebrastack.com
     StrictHostKeyChecking no
@@ -59,7 +59,7 @@ bugfixten
 
 # Install Krew
 https://krew.sigs.k8s.io/docs/user-guide/setup/install/
-```
+```bash
 (
   set -x; cd "$(mktemp -d)" &&
   curl -fsSLO "https://github.com/kubernetes-sigs/krew/releases/latest/download/krew.tar.gz" &&
