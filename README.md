@@ -9,8 +9,8 @@ xcode-select --install
 * Download SimpleMind from: https://simpleapps.eu/download/full-edition/simplemind-pro-mac/
 * Show Status Bar: defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 * Enable hot corners on top right for sleep
-* Set Some Keyboard Shortcuts - Move focus to next window  
-
+* Set Keyboard Shortcuts - 
+** Move focus to next window  
 
 # Install Homebrew
 ```
@@ -20,8 +20,6 @@ brew analytics off
 curl -o $HOME/.Brewfile https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.Brewfile
 brew bundle install --file=$HOME/.Brewfile
 ```
-
-# Install iterm2 because BigSur does not have terminal
 
 # Install oh-my-zsh and powerlevel10k plugin
 ```
