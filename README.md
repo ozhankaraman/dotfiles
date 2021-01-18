@@ -60,7 +60,7 @@ kubectl krew install ctx ns tree view-utilization view-allocations access-matrix
 * Enable hot corners on top right for sleep
 * Set Keyboard Shortcuts - 
   * Move focus to next window  
-* Add Easy Move+Resize, Moom, Viscosity Programs to MacOS User Login Items for autostart up when user logons
+* Add Easy Move+Resize, Moom, Viscosity, Dropbox Programs to MacOS User Login Items for autostart up when user logons
 
 # Moom Setup
 * MacBook 12"
