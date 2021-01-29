@@ -8,7 +8,6 @@ tap 'homebrew/core'
 tap 'ldez/tap'
 tap 'homebrew/cask-fonts'
 tap 'starkandwayne/cf'
-tap 'tektoncd/tools'
 
 # System tools
 brew 'gettext'
