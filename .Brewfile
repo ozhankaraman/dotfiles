@@ -103,7 +103,7 @@ brew 'calicoctl'
 brew 'helm'
 brew 'helmfile'
 brew 'k9s'
-brew 'tektoncd/tools/tektoncd-cli'
+brew 'tektoncd-cli'
 brew 'kind'
 
 # Fun tools
