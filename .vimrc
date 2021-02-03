@@ -4,8 +4,8 @@ syntax on
 " set number
 set ruler
 " set colorcolumn=80
-set autoindent
-set smartindent
+" set autoindent
+" set smartindent
 
 " tabstop:          Width of tab character
 " softtabstop:      Fine tunes the amount of white space to be added
@@ -16,8 +16,8 @@ set softtabstop =4
 set shiftwidth  =4
 set expandtab
 
-set list
-set listchars=tab:\|_
+" set list
+" set listchars=tab:\|_
 
 " set ttyfast
 " set mouse+=a
