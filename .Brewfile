@@ -112,7 +112,7 @@ brew 'lolcat'
 
 # Desktop Software
 cask 'clipy'
-cask 'zoomus'
+cask 'zoom'
 cask 'slack'
 cask 'rectangle'
 cask 'spotify'
