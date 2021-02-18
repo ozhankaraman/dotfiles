@@ -40,6 +40,7 @@ cask 'easy-move-plus-resize'
 
 # Development & Power Tools
 cask 'iterm2'
+cask 'alacritty'
 cask 'visual-studio-code'
 brew 'bash'
 brew 'bash-completion'
