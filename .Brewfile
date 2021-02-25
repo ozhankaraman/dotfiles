@@ -94,6 +94,7 @@ brew 'fluxcd/tap/flux'
 brew 'argocd'
 brew 'kafkacat'
 brew 'gnupg'
+brew 'istioctl'
 
 # Containers
 brew 'kubernetes-cli'
