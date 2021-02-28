@@ -154,8 +154,10 @@ export FZF_DEFAULT_COMMAND="fd --type f"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --extended'
 
-export KUBECONFIG="/Users/ozhan/.kube/config:/Users/ozhan/.kube/t2-kubeconfig:/Users/ozhan/.kube/config:/Users/ozhan/.kube/j1-kubeconfig"
-#export KUBECONFIG=/Users/ozhan/.kube/config:/Users/ozhan/.kube/k4-kubeconfig:/Users/ozhan/.kube/kubeconfig:/Users/ozhan/.kube/ozhank-ntt-tst-eks-kubeconfig
+export KUBECONFIG="$HOME/.kube/config"
+for files in `ls $HOME/.kube/??-config`; do
+  export KUBECONFIG="$KUBECONFIG:$files"
+done  
 
 #BREW GNU TOOLS
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
@@ -173,4 +175,4 @@ alias ls="ls --quoting-style=literal --color"
 #export PATH=$PATH:$HOME/.local/bin:$HOME/go/bin
 
 #Add python local bin to PATH
-export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.local/bin:$HOME/Library/Python/3.9/bin
