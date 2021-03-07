@@ -10,6 +10,7 @@ brew analytics off
 curl -o $HOME/.Brewfile https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.Brewfile
 brew bundle install --file=$HOME/.Brewfile
 ```
+# Install Apple Developer SF Mono Fonts: https://developer.apple.com/fonts/ https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg
 
 # Install oh-my-zsh and powerlevel10k plugin
 ```bash
