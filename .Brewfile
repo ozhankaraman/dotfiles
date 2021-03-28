@@ -32,6 +32,7 @@ brew 'pv'
 # unrar is removed because of licensing problems for HomeBrew
 # brew 'unrar'
 cask 'the-unarchiver'
+cask 'raspberry-pi-imager'
 brew 'shfmt'
 brew 'MisterTea/et/et'
 brew 'httpie'
