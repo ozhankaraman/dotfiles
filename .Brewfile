@@ -109,6 +109,7 @@ brew 'helmfile'
 brew 'k9s'
 brew 'tektoncd-cli'
 brew 'kind'
+brew 'k3sup'
 
 # Fun tools
 brew 'asciinema'
