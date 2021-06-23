@@ -110,6 +110,7 @@ brew 'k9s'
 brew 'tektoncd-cli'
 brew 'kind'
 brew 'k3sup'
+brew 'clusterctl'
 
 # Fun tools
 brew 'asciinema'
