@@ -13,7 +13,6 @@ brew bundle install --file=$HOME/Downloads/.Brewfile
 # Install Apple Developer SF Mono Fonts: 
 ```
 https://developer.apple.com/fonts/ 
-https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg
 ```
 
 # Install oh-my-zsh and powerlevel10k plugin
