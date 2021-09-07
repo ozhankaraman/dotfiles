@@ -7,8 +7,8 @@ xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # Turn off brew analytics
 brew analytics off
-curl -o $HOME/.Brewfile https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.Brewfile
-brew bundle install --file=$HOME/.Brewfile
+curl -o $HOME/Downloads/.Brewfile https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.Brewfile
+brew bundle install --file=$HOME/Downloads/.Brewfile
 ```
 # Install Apple Developer SF Mono Fonts: 
 ```
