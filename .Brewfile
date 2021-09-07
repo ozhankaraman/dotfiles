@@ -1,6 +1,6 @@
 #
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-# brew bundle install --file=$HOME/.Brewfile
+# brew bundle install --file=$HOME/Downloads/.Brewfile
 
 # vim: syntax=ruby filetype=ruby
 tap 'homebrew/bundle'
