@@ -29,6 +29,11 @@ wget -O $HOME/.zshrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/mas
 wget -O $HOME/.vimrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.vimrc
 ```
 
+# Configure github account access
+```
+curl -o $HOME/.gitconfig https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.github_username
+```
+
 # Configure .ssh/config
 ```bash
 cat << EOF >> $HOME/.ssh/config
