@@ -26,6 +26,8 @@ wget -O $HOME/.zshrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/mas
 
 # Install .vimrc
 ```
+mkdir -p $HOME/.vim/colors
+wget https://github.com/morhetz/gruvbox/raw/master/colors/gruvbox.vim -O $HOME/.vim/colors/gruvbox.vim
 wget -O $HOME/.vimrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.vimrc
 ```
 
