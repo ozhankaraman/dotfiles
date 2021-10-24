@@ -114,6 +114,7 @@ brew 'tektoncd-cli'
 # brew 'kind'
 # brew 'k3sup'
 brew 'clusterctl'
+brew 'kubeseal'
 
 # Fun tools
 brew 'asciinema'
