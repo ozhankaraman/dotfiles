@@ -99,6 +99,7 @@ brew 'argocd'
 brew 'kafkacat'
 brew 'gnupg'
 brew 'istioctl'
+brew 'kubeseal'
 
 # Containers
 brew 'kubernetes-cli'
