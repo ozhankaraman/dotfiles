@@ -159,6 +159,13 @@ for files in $HOME/.kube/*.kubeconfig; do
   export KUBECONFIG="$KUBECONFIG:$files"
 done
 
+#setopt +o nomatch
+#export KUBECONFIG="$HOME/.kube/config"
+#for files in `find $HOME/.kube -name *.kubeconfig`; do
+#  export KUBECONFIG="$KUBECONFIG:$files"
+#done
+#setopt -o nomatch
+
 #BREW GNU TOOLS
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
