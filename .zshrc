@@ -155,9 +155,9 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --extended'
 
 export KUBECONFIG="$HOME/.kube/config"
-for files in `ls $HOME/.kube/??-config`; do
+for files in $HOME/.kube/*.kubeconfig; do
   export KUBECONFIG="$KUBECONFIG:$files"
-done  
+done
 
 #BREW GNU TOOLS
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
