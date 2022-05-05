@@ -67,6 +67,22 @@ elif [ ".$1." == ".pi4." ]; then
     username=pi
     host=192.168.8.4
     unset domain
+    
+elif [ ".$1." == ".fabrika." ]; then
+    color='\033[0;32m'
+    username=root
+    host=192.168.8.8
+    unset domain
+    nc -G 6 -z $host 22 1>/dev/null 2>/dev/null
+    if [ $? -eq 1 ]; then
+        wakeonlan 0c:54:a5:5b:bf:c2
+        sleep 10
+    fi
+
+elif [ ".$1." == ".esxi1." ]; then
+    unset domain
+    username="root"
+    host="esxi1.zz.zebrastack.com"    
 
 elif [ ".$1." == ".london." ]; then
     unset domain
