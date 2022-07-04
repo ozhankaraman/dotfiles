@@ -68,6 +68,18 @@ elif [ ".$1." == ".pi4." ]; then
     host=192.168.8.4
     unset domain
     
+elif [ ".$1." == ".ubuntud." ]; then
+    color='\033[0;32m'
+    username=ozhan
+    host=192.168.8.5
+    unset domain
+
+elif [ ".$1." == ".xvpn." ]; then
+    color='\033[0;32m'
+    username=pi
+    host=192.168.8.6
+    unset domain
+    
 elif [ ".$1." == ".fabrika." ]; then
     color='\033[0;32m'
     username=root
