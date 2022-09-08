@@ -183,3 +183,5 @@ alias ls="ls --quoting-style=literal --color"
 
 #Add python local bin to PATH
 export PATH=$PATH:$HOME/.local/bin:$HOME/Library/Python/3.9/bin
+
+export VAULT_ADDR="https://vault.zebrastack.com"
