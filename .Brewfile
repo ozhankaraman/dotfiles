@@ -104,6 +104,7 @@ brew 'kafkacat'
 brew 'gnupg'
 brew 'istioctl'
 brew 'kubeseal'
+brew 'vault'
 
 # Containers
 brew 'kubernetes-cli'
