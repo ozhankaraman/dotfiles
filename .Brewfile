@@ -105,6 +105,7 @@ brew 'gnupg'
 brew 'istioctl'
 brew 'kubeseal'
 brew 'vault'
+brew 'vcluster'
 
 # Containers
 brew 'kubernetes-cli'
