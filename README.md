@@ -78,3 +78,4 @@ kubectl krew install ctx ns tree view-utilization view-allocations access-matrix
   * Custom > define window size 16x16 | Move and Zoom > ⌘L => Empty one pixel around perimeter and fill 15x15
 * iMac 27"
   * Custom > define window size 24x16
+
