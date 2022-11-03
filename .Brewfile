@@ -143,6 +143,7 @@ cask 'keepassxc'
 cask 'vlc'
 cask 'viscosity'
 cask 'sublime-text'
+cask 'viscosity'
 
 # iMac Tools who needs high CPU/Mem Consumption
 # cask 'docker' # docker for desktop
