@@ -38,7 +38,7 @@ brew 'shfmt'
 brew 'MisterTea/et'
 brew 'httpie'
 brew 'dog'
-# cask 'easy-move-plus-resize'
+cask 'easy-move-plus-resize'
 
 # Development & Power Tools
 cask 'iterm2'
