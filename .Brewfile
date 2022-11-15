@@ -103,6 +103,7 @@ brew 'istioctl'
 brew 'kubeseal'
 brew 'vault'
 brew 'vcluster'
+brew 'vale'
 
 # Containers
 brew 'kubernetes-cli'
