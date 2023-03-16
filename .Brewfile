@@ -105,6 +105,7 @@ brew 'kubeseal'
 brew 'vault'
 brew 'vcluster'
 brew 'vale'
+brew 'kubebuilder'
 
 # Containers
 brew 'kubernetes-cli'
