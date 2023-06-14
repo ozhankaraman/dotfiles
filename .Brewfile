@@ -107,6 +107,7 @@ brew 'vcluster'
 brew 'vale'
 brew 'kubebuilder'
 brew 'cilium-cli'
+brew 'gron'
 
 # Containers
 brew 'kubernetes-cli'
