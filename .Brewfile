@@ -40,6 +40,7 @@ brew 'httpie'
 brew 'dog'
 cask 'easy-move-plus-resize'
 
+
 # Development & Power Tools
 cask 'iterm2'
 cask 'alacritty'
@@ -108,6 +109,7 @@ brew 'vale'
 brew 'kubebuilder'
 brew 'cilium-cli'
 brew 'gron'
+brew 's3cmd'
 
 # Containers
 brew 'kubernetes-cli'
