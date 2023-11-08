@@ -111,6 +111,7 @@ brew 'cilium-cli'
 brew 'gron'
 brew 's3cmd'
 brew 'kubescape'
+brew 'qrencode'
 
 # Containers
 brew 'kubernetes-cli'
