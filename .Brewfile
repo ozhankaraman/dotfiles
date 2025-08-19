@@ -13,20 +13,6 @@ brew 'coreutils'
 brew 'findutils'
 brew 'htop'
 brew 'gnu-tar'
-Last login: Tue Aug 19 15:03:36 on ttys005
-❯ vi .Brewfile
-❯ cat .Brewfile
-# brew bundle install --file=$HOME/.Brewfile
-# brew upgrade --cask utm
-
-# System tools
-brew 'gettext'
-brew 'proctools'
-brew 'pstree'
-brew 'coreutils'
-brew 'findutils'
-brew 'htop'
-brew 'gnu-tar'
 brew 'gnu-time'
 brew 'gnu-which'
 brew 'gnu-sed'
