@@ -1,7 +1,8 @@
 # dotfiles
 Common dotfiles for MacOS which i use daily for my work
 
-# Install Homebrew
+# Install Homebrew or 
+## Install Homebrew (mac)
 ```bash
 xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -9,6 +10,12 @@ xcode-select --install
 brew analytics off
 curl -o $HOME/Downloads/.Brewfile https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.Brewfile
 brew bundle install --file=$HOME/.Brewfile
+```
+
+## Install Arkade (linux/arm64)
+https://github.com/alexellis/arkade
+```bash
+curl -sLS https://get.arkade.dev | sudo sh
 ```
 
 # Install Command-Line Fuzzy Finder
