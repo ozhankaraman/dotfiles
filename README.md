@@ -16,6 +16,7 @@ brew bundle install --file=$HOME/.Brewfile
 https://github.com/alexellis/arkade
 ```bash
 curl -sLS https://get.arkade.dev | sudo sh
+arkade get argocd cilium clusterctl helm k3d k9s kind kubebuilder kubectl talosctl timoni vault
 ```
 
 # Install Command-Line Fuzzy Finder
