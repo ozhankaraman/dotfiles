@@ -61,7 +61,7 @@ https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 )
 
 kubectl krew update
-kubectl krew install ctx ns tree view-utilization view-allocations access-matrix who-can whoami neat get-all
+kubectl krew install ctx ns tree view-utilization view-allocations access-matrix who-can whoami neat get-all klock ktop node-shell oidc-login rook-ceph stern virt
 ```
 
 # Last Actions
