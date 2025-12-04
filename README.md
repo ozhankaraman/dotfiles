@@ -8,7 +8,7 @@ Common dotfiles for MacOS or Linux environment which I use daily for my work and
 > /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 > # Turn off brew analytics
 > brew analytics off
-> curl -o $HOME/Downloads/.Brewfile https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.Brewfile
+> curl -o $HOME/.Brewfile https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.Brewfile
 > brew bundle install --file=$HOME/.Brewfile
 > ```
 > 
