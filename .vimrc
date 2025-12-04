@@ -1,5 +1,8 @@
 set nocompatible
 
+set cursorline
+highlight CursorLine ctermbg=lightgrey guibg=lightgrey
+
 syntax on
 " set number
 set ruler
@@ -11,10 +14,10 @@ set ruler
 " softtabstop:      Fine tunes the amount of white space to be added
 " shiftwidth        Determines the amount of whitespace to add in normal mode
 " expandtab:        When on uses space instead of tabs
-set tabstop     =4
-set softtabstop =4
-set shiftwidth  =4
-set expandtab
+" set tabstop     =4
+" set softtabstop =4
+" set shiftwidth  =4
+" set expandtab
 
 " set list
 " set listchars=tab:\|_
@@ -44,3 +47,5 @@ colorscheme gruvbox
 " Enable italics, Make sure this is immediately after colorscheme
 " https://stackoverflow.com/questions/3494435/vimrc-make-comments-italic
 highlight Comment cterm=italic gui=italic
+set background=light
+" set background=dark
