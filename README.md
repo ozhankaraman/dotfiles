@@ -31,8 +31,9 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 chmod 755 /usr/local/share/zsh /usr/local/share/zsh/site-functions
-rm .zshrc
+rm -f .zshrc .p10k.zsh
 wget -O $HOME/.zshrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.zshrc
+wget -O $HOME/.p10k.zsh https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.p10k.zsh
 ```
 
 # Install .vimrc
