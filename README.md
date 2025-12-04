@@ -1,5 +1,5 @@
 # dotfiles
-Common dotfiles for MacOS which i use daily for my work
+Common dotfiles for MacOS or Linux environment which I use daily for my work and personal development
 
 # Install Homebrew or Arkade
 ## Install Homebrew (mac)
