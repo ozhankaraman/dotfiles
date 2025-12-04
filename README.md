@@ -1,23 +1,23 @@
 # dotfiles
 Common dotfiles for MacOS or Linux environment which I use daily for my work and personal development
 
-# Install Homebrew or Arkade
-## Install Homebrew (mac)
-```bash
-xcode-select --install
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# Turn off brew analytics
-brew analytics off
-curl -o $HOME/Downloads/.Brewfile https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.Brewfile
-brew bundle install --file=$HOME/.Brewfile
-```
-
-## Install Arkade (linux/arm64)
-https://github.com/alexellis/arkade
-```bash
-curl -sLS https://get.arkade.dev | sudo sh
-arkade get argocd cilium clusterctl helm k3d k9s kind kubebuilder kubectl talosctl timoni vault
-```
+> # Install Homebrew or Arkade
+> ## Install Homebrew (mac)
+> ```bash
+> xcode-select --install
+> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+> # Turn off brew analytics
+> brew analytics off
+> curl -o $HOME/Downloads/.Brewfile https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.Brewfile
+> brew bundle install --file=$HOME/.Brewfile
+> ```
+> 
+> ## Install Arkade (linux/arm64)
+> https://github.com/alexellis/arkade
+> ```bash
+> curl -sLS https://get.arkade.dev | sudo sh
+> arkade get argocd cilium clusterctl helm k3d k9s kind kubebuilder kubectl talosctl timoni vault
+> ```
 
 # Install Command-Line Fuzzy Finder
 https://github.com/junegunn/fzf
