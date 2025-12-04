@@ -11,6 +11,13 @@ curl -o $HOME/Downloads/.Brewfile https://raw.githubusercontent.com/ozhankaraman
 brew bundle install --file=$HOME/.Brewfile
 ```
 
+# Install Command-Line Fuzzy Finder
+https://github.com/junegunn/fzf
+```bash
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
+
 # Install oh-my-zsh and powerlevel10k plugin
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -41,8 +48,6 @@ Host *.zz.zebrastack.com
 EOF
 ```
 
-bugfixten
-
 # Install Krew
 https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 ```bash
@@ -64,12 +69,9 @@ kubectl krew install ctx ns tree view-utilization view-allocations access-matrix
 
 * Install Microsoft Word, Excel bundle from: www.office.com
 * Download SimpleMind from: https://simpleapps.eu/download/full-edition/simplemind-pro-mac/
-* Show Status Bar: defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 * Install Moom from Apple Store
+* Setup Easy Move+Resize for Alt key
 * Enable hot corners on top right for sleep
-* Set Keyboard Shortcuts - 
-  * Move focus to next window  
-* Add Easy Move+Resize, Moom, Viscosity, Dropbox Programs to MacOS User Login Items for autostart up when user logons
 
 # Moom Setup
 * MacBook 12"
