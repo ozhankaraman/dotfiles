@@ -49,11 +49,15 @@ curl -o $HOME/.gitconfig https://raw.githubusercontent.com/ozhankaraman/dotfiles
 
 # Configure .ssh/config
 ```bash
+mkdir -p $HOME/.ssh
+chmod 700 $HOME/.ssh
 cat << EOF >> $HOME/.ssh/config
 Host *.zz.zebrastack.com
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
 EOF
+chmod 600 $HOME/.ssh/config
+# Download your ssh keys under .ssh folder
 ```
 
 # Install Krew
