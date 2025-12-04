@@ -1,143 +1,172 @@
 #!/bin/bash
 
-#Renkler
-#Black       0;30     Dark Gray     1;30
-#Blue        0;34     Light Blue    1;34
-#Green       0;32     Light Green   1;32
-#Cyan        0;36     Light Cyan    1;36
-#Red         0;31     Light Red     1;31
-#Purple      0;35     Light Purple  1;35
-#Brown       0;33     Yellow        1;33
-#Light Gray  0;37     White         1;37
-
-NC='\033[0m' # No Color
+NC='\033[0m'
 YELLOW='\033[1;33m'
-color=$NC
+GREEN='\033[0;32m'
+BLUE='\033[1;34m'
+RED='\033[0;31m'
 
-#cat $HOME/.ssh/known_hosts | grep -v "192.168.23" | grep -v "192.168.24" | grep -v "192.168.25" | grep -v "192.168.26" | grep -v "192.168.27" | grep -v "192.168.28" | grep -v "192.168.29" | grep -v "192.168.30" | grep -v "192.168.31" | grep -v "192.168.32" | grep -v "195.142.109" | grep -v "zz.zebrastack.com" > /tmp/known_hosts
-#mv /tmp/known_hosts $HOME/.ssh/known_hosts
+DOMAINS=("l104.zebrastack.com" "zz.zebrastack.com" "zebrastack.com")
 
-if [ -z $1 ]; then
+usage() {
+    echo -e "${YELLOW}Usage:${NC} rs [user@]<host> [sftp] [-c]"
+    echo -e "       Attempts ET/SSH/SFTP connection and optionally cleans known_hosts"
     echo
-    echo '\033[1;35m'"Usage: ./rs kvmxx${NC}"
+    echo -e "${YELLOW}Examples:${NC}"
+    echo -e "  rs harput              # Connect as root@harput using ET if possible"
+    echo -e "  rs pi@harput sftp      # Connect as pi@harput via SFTP"
+    echo -e "  rs harput -c           # Clean known_hosts then connect"
+    echo -e "  rs harput sftp -c      # Clean known_hosts then SFTP connect"
     echo
-    exit
-fi
+}
 
+require_binaries() {
+    local mode="$1"
+    for bin in dig nc; do
+        if ! command -v "$bin" &>/dev/null; then
+            echo -e "${RED}Missing required binary: $bin${NC}"
+            exit 1
+        fi
+    done
+    if [[ "$mode" != "sftp" ]]; then
+        if ! command -v et &>/dev/null; then
+            echo -e "${RED}Missing required binary: et${NC}"
+            exit 1
+        fi
+    fi
+}
 
-host=$1
-# Possible Domains
-if [ ".$2." == ".z." -o ".$2." == ".." ]; then
-    # ZebraStack 
-    username="root"
-    domain="zz.zebrastack.com"
-    # host="`echo $1|cut -d@ -f2`.$domain"
-    color='\033[1;34m'
-elif [ ".$2." == ".c." ]; then
-    # Cloudeos
-    domain="labsa.cloudeos.com"
-    color='\033[0;31m'
-    username="root"
-fi
+resolve_dns() {
+    dig +short "$1" | grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$' | head -n 1
+}
 
-if [ `echo $1 | wc -c` -eq 3 ]; then
-    nc -G 6 -z "${1}m1.${domain}" 22 1>/dev/null 2>/dev/null
-    if [ $? -eq 0 ]; then
-        host=${1}m1
-    else
-        host=${1}
+try_domains() {
+    local host=$1
+    for d in "${DOMAINS[@]}"; do
+        ip=$(resolve_dns "${host}.${d}")
+        if [[ -n "$ip" ]]; then
+            echo "${host}.${d}"
+            return 0
+        fi
+    done
+    return 1
+}
+
+check_et_port() {
+    local ip=$1
+    nc -w 8 -z "$ip" 2022 &>/dev/null
+    return $?
+}
+
+clean_known_host() {
+    local fqdn=$1
+    local ip=$2
+
+    echo -e "${YELLOW}Cleaning known_hosts entries for ${fqdn} and ${ip}${NC}"
+
+    cp ~/.ssh/known_hosts ~/.ssh/known_hosts.bak 2>/dev/null
+
+    local tmpfile=$(mktemp)
+
+    # Start by removing known unhashed entries (IP and FQDN)
+    ssh-keygen -R "$fqdn" >/dev/null 2>&1
+    # Disable ip based cleanup
+    ssh-keygen -R "$ip" >/dev/null 2>&1
+
+    # Fetch current key(s)
+    local keyscan=$(ssh-keyscan -T 5 "$fqdn" 2>/dev/null)
+    local keys_to_remove=()
+
+    while IFS= read -r line; do
+        key=$(echo "$line" | awk '{print $3}')
+        [[ -n "$key" ]] && keys_to_remove+=("$key")
+    done <<< "$keyscan"
+
+    # Filter .ssh/known_hosts by removing lines with:
+    # - FQDN
+    # - IP
+    # - key content
+    grep -v -F "$fqdn" ~/.ssh/known_hosts | grep -v -F "$ip" > "$tmpfile" || true
+    for key in "${keys_to_remove[@]}"; do
+        grep -v -F "$key" "$tmpfile" > "${tmpfile}.tmp" && mv "${tmpfile}.tmp" "$tmpfile"
+    done
+
+    mv "$tmpfile" ~/.ssh/known_hosts
+}
+
+main() {
+    if [[ $# -lt 1 ]]; then
+        usage
+        exit 1
     fi
 
-elif [ ".$1." == ".pos." ]; then
-    color='\033[0;34m'
-    username="root"
-    host="127.0.0.1"
-    port="22234"
-    unset domain
+    input=$1
+    shift
+    mode="auto"
+    clean=false
 
-elif [ ".$1." == ".blinkt." ]; then
-    color='\033[1;33m'
-    username=pi
-    # host=192.168.6.1
-    host=192.168.6.3
-    unset domain
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            sftp)
+                mode="sftp"
+                ;;
+            -c)
+                clean=true
+                ;;
+            *)
+                echo -e "${RED}Unknown option: $1${NC}"
+                usage
+                exit 1
+                ;;
+        esac
+        shift
+    done
 
-elif [ ".$1." == ".pi4." ]; then
-    color='\033[0;32m'
-    username=pi
-    host=192.168.8.4
-    unset domain
-    
-elif [ ".$1." == ".ubuntud." ]; then
-    color='\033[0;32m'
-    username=ozhan
-    host=192.168.8.5
-    unset domain
+    require_binaries "$mode"
 
-elif [ ".$1." == ".xvpn." ]; then
-    color='\033[0;32m'
-    username=pi
-    host=192.168.8.6
-    unset domain
-    
-elif [ ".$1." == ".fabrika." ]; then
-    color='\033[0;32m'
-    username=root
-    host=192.168.8.8
-    unset domain
-    nc -G 6 -z $host 22 1>/dev/null 2>/dev/null
-    if [ $? -eq 1 ]; then
-        wakeonlan 0c:54:a5:5b:bf:c2
-        sleep 10
+    if [[ "$input" == *"@"* ]]; then
+        username="${input%@*}"
+        hostpart="${input#*@}"
+    else
+        username="root"
+        hostpart="$input"
     fi
 
-elif [ ".$1." == ".esxi1." ]; then
-    unset domain
-    username="root"
-    host="esxi1.zz.zebrastack.com"    
-
-elif [ ".$1." == ".london." ]; then
-    unset domain
-    username="root"
-    host="london.zebrastack.com"
-fi
-
-# If domain is missing lets build fqdn
-if [ ".$domain." != ".." -a ".$host2." == ".." ]; then
-    host2=$host.$domain
-else
-    host2=$host
-fi
-
-# If username is missing lets add username to form full ssh connection string
-if !( [ -z $username ] ); then
-  username="${username}@"
-fi
-
-# Check if destination server has eternal terminal installed
-nc -G 6 -z $host2 2022 1>/dev/null 2>/dev/null
-if [ $? -eq 0 ]; then
-    if [ -z $TMUX ]; then
-        export DISABLE_AUTO_TITLE="true"
-        echo -n -e "\033]0;$host\007"
-        # $HOME/bin/ssh_color.py $host
-        $HOME/bin/ssh_color.py $1
+    if [[ "$hostpart" == *.* ]]; then
+        fqdn="$hostpart"
+        ip=$(resolve_dns "$fqdn")
+        if [[ -z "$ip" ]]; then
+            echo -e "${RED}Could not resolve ${fqdn}${NC}"
+            exit 2
+        fi
     else
-        # tmux rename-window $host
-      tmux rename-window $1
+        fqdn=$(try_domains "$hostpart") || {
+            echo -e "${RED}Could not resolve any domain for ${hostpart}${NC}"
+            exit 3
+        }
+        ip=$(resolve_dns "$fqdn")
     fi
-    echo -e "${YELLOW}et $username$host2${NC}"
-    echo
-    et $username$host2
-    if [ -z $TMUX ]; then
-        export DISABLE_AUTO_TITLE="false"
-        echo -n -e "\033]6;1;bg;*;default\a"
-    else
-        tmux rename-window zsh
-    fi  
-else
-    echo -e "${color}ssh $username$host2${NC}"
-    echo
-    ssh $username$host2
-fi
 
+    if [[ "$clean" == true ]]; then
+        clean_known_host "$fqdn" "$ip"
+    fi
+
+    echo -ne "\033]2;$hostpart\007"
+
+    if [[ "$mode" == "sftp" ]]; then
+        echo -e "${GREEN}sftp ${username}@${fqdn}${NC}"
+        sftp "${username}@${fqdn}"
+    else
+        if check_et_port "$ip"; then
+            echo -e "${YELLOW}et ${username}@${fqdn}${NC}"
+            et "${username}@${fqdn}"
+        else
+            echo -e "${BLUE}ssh ${username}@${fqdn}${NC}"
+            ssh "${username}@${fqdn}"
+        fi
+    fi
+
+    echo -ne "\033]2;$(hostname -s)\007"
+}
+
+main "$@"
