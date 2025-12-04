@@ -1,7 +1,7 @@
 # dotfiles
 Common dotfiles for MacOS which i use daily for my work
 
-# Install Homebrew or 
+# Install Homebrew or Arkade
 ## Install Homebrew (mac)
 ```bash
 xcode-select --install
