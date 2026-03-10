@@ -32,15 +32,15 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 chmod 755 /usr/local/share/zsh /usr/local/share/zsh/site-functions
 rm -f .zshrc .p10k.zsh
-wget -O $HOME/.zshrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.zshrc
-wget -O $HOME/.p10k.zsh https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.p10k.zsh
+curl -o $HOME/.zshrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.zshrc
+curl -o $HOME/.p10k.zsh https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.p10k.zsh
 ```
 
 # Install .vimrc
 ```
 mkdir -p $HOME/.vim/colors
-wget https://github.com/morhetz/gruvbox/raw/master/colors/gruvbox.vim -O $HOME/.vim/colors/gruvbox.vim
-wget -O $HOME/.vimrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.vimrc
+curl -o $HOME/.vim/colors/gruvbox.vim https://github.com/morhetz/gruvbox/raw/master/colors/gruvbox.vim $HOME/.vim/colors/gruvbox.vim
+curl -o $HOME/.vimrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.vimrc
 ```
 
 # Configure github account access
