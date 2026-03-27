@@ -39,7 +39,7 @@ curl -o $HOME/.p10k.zsh https://raw.githubusercontent.com/ozhankaraman/dotfiles/
 # Install .vimrc
 ```
 mkdir -p $HOME/.vim/colors
-curl -o $HOME/.vim/colors/gruvbox.vim https://github.com/morhetz/gruvbox/raw/master/colors/gruvbox.vim $HOME/.vim/colors/gruvbox.vim
+curl -o $HOME/.vim/colors/gruvbox.vim https://github.com/morhetz/gruvbox/raw/master/colors/gruvbox.vim
 curl -o $HOME/.vimrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.vimrc
 ```
 
