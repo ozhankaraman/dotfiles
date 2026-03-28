@@ -75,7 +75,14 @@ https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 )
 
 kubectl krew update
-kubectl krew install ctx ns tree view-utilization view-allocations access-matrix who-can whoami neat get-all klock ktop node-shell oidc-login rook-ceph stern virt
+kubectl krew install ctx ns tree view-utilization view-allocations access-matrix who-can whoami neat get-all klock ktop node-shell oidc-login stern virt node-resource cond pods-on
+```
+
+# Copy Custom Sripts
+```bash
+mkdir $HOME/.bin
+curl -o $HOME/.bin/rs https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/rs
+chmod 755 $HOME/.bin/*
 ```
 
 # Last Actions
