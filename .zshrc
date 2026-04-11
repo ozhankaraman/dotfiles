@@ -112,7 +112,7 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export PATH=$HOME/.krew/bin:$HOME/bin:$HOME/.local/bin:$HOME/.arkade/bin:$HOME/.bin:$PATH
+export PATH=$HOME/.krew/bin:$HOME/.bin:$HOME/.local/bin:$HOME/.arkade/bin:$HOME/.bin:$PATH
 
 source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND="fd --type f"
@@ -122,13 +122,11 @@ export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --extended'
 export LC_ALL=C.UTF-8
 export LANG=en_US.UTF-8
 
-export VAULT_ADDR="https://vault.zebrastack.com"
-# export VAULT_LDAP_KVINFRA_ADMIN_USERNAME=""
-# export VAULT_LDAP_KVINFRA_ADMIN_PASSWORD=""
+export VAULT_ADDR='https://vault.zebrastack.com'
+export VAULT_LDAP_KVINFRA_ADMIN_USERNAME=''
+export VAULT_LDAP_KVINFRA_ADMIN_PASSWORD=''
 
-# export HELM_REPO_PASSWORD=''
-
-# alias oci='docker run --user $(id -u):$(id -g) -v "$HOME/.oci:/root/.oci" ghcr.io/oracle/oci-cli:latest '
+export HELM_REPO_PASSWORD=''
 
 # Start tmux on SSH login if not already inside tmux
 #if [[ -n "$SSH_CONNECTION" ]] && [[ -z "$TMUX" ]]; then
