@@ -112,7 +112,7 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export PATH=$HOME/.krew/bin:$HOME/.bin:$HOME/.local/bin:$HOME/.arkade/bin:$HOME/.bin:$PATH
+export PATH=$HOME/.krew/bin:$HOME/.bin:$HOME/.local/bin:/usr/local/opt/gnu-sed/libexec/gnubin:$HOME/.arkade/bin:$HOME/.bin:$PATH
 
 source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND="fd --type f"
