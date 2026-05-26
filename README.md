@@ -81,7 +81,7 @@ kubectl krew install ctx ns tree view-utilization view-allocations access-matrix
 # Copy Custom Sripts
 ```bash
 mkdir $HOME/.bin
-curl -o $HOME/.bin/rs [https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/rs](https://raw.githubusercontent.com/ozhankaraman/dotfiles/refs/heads/master/bin/rs)
+curl -o $HOME/.bin/rs https://raw.githubusercontent.com/ozhankaraman/dotfiles/refs/heads/master/bin/rs
 chmod 755 $HOME/.bin/*
 ```
 
