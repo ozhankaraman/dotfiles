@@ -1,7 +1,7 @@
 set nocompatible
 
-set cursorline
-highlight CursorLine ctermbg=lightgrey guibg=lightgrey
+" set cursorline
+" highlight CursorLine ctermbg=lightgrey guibg=lightgrey
 
 syntax on
 " set number
