@@ -119,6 +119,8 @@ export FZF_DEFAULT_COMMAND="fd --type f"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --extended'
 
+export ET_NO_TELEMETRY=true
+
 export LC_ALL=C.UTF-8
 export LANG=en_US.UTF-8
 
