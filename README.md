@@ -62,6 +62,7 @@ chmod 600 $HOME/.ssh/config
 ```
 
 # Install Krew
+## Non MacOS Instances
 https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 ```bash
 (
@@ -76,6 +77,10 @@ https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 
 kubectl krew update
 kubectl krew install ctx ns tree view-utilization view-allocations access-matrix who-can whoami neat get-all klock ktop node-shell oidc-login stern virt node-resource cond pods-on
+
+## On MacOS via Brew
+brew install krew kubectx
+kubectl krew install tree view-utilization view-allocations access-matrix who-can whoami neat get-all klock ktop node-shell oidc-login stern virt node-resource cond pods-on
 ```
 
 # Copy Custom Sripts
