@@ -4,7 +4,6 @@ Common dotfiles for MacOS or Linux environment which I use daily for my work and
 # Install Homebrew or Arkade
 ## Install Homebrew (mac)
 ```bash
-xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # Turn off brew analytics
 brew analytics off
