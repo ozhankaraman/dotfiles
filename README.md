@@ -1,23 +1,23 @@
 # dotfiles
 Common dotfiles for MacOS or Linux environment which I use daily for my work and personal development
 
-> # Install Homebrew or Arkade
-> ## Install Homebrew (mac)
-> ```bash
-> xcode-select --install
-> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-> # Turn off brew analytics
-> brew analytics off
-> curl -o $HOME/.Brewfile https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.Brewfile
-> brew bundle install --file=$HOME/.Brewfile
-> ```
-> 
-> ## Install Arkade (linux/arm64)
-> https://github.com/alexellis/arkade
-> ```bash
-> curl -sLS https://get.arkade.dev | sudo sh
-> arkade get argocd cilium clusterctl helm k3d k9s kind kubebuilder kubectl talosctl timoni vault
-> ```
+# Install Homebrew or Arkade
+## Install Homebrew (mac)
+```bash
+xcode-select --install
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Turn off brew analytics
+brew analytics off
+curl -o $HOME/.Brewfile https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.Brewfile
+brew bundle install --file=$HOME/.Brewfile
+```
+
+## Install Arkade (linux/arm64)
+https://github.com/alexellis/arkade
+```bash
+curl -sLS https://get.arkade.dev | sudo sh
+arkade get argocd cilium clusterctl helm k3d k9s kind kubebuilder kubectl talosctl timoni vault
+```
 
 # Install Command-Line Fuzzy Finder
 https://github.com/junegunn/fzf
@@ -37,14 +37,14 @@ curl -o $HOME/.p10k.zsh https://raw.githubusercontent.com/ozhankaraman/dotfiles/
 ```
 
 # Install .vimrc
-```
+```bash
 mkdir -p $HOME/.vim/colors
 curl -o $HOME/.vim/colors/gruvbox.vim https://github.com/morhetz/gruvbox/raw/master/colors/gruvbox.vim
 curl -o $HOME/.vimrc https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.vimrc
 ```
 
 # Configure github account access
-```
+```bash
 curl -o $HOME/.gitconfig https://raw.githubusercontent.com/ozhankaraman/dotfiles/master/.github_username
 ```
 
@@ -79,8 +79,8 @@ kubectl krew update
 kubectl krew install ctx ns tree view-utilization view-allocations access-matrix who-can whoami neat get-all klock ktop node-shell oidc-login stern virt node-resource cond pods-on
 ```
 
-## On MacOS via Brew
-``` bash
+## MacOS via Brew
+```bash
 brew install krew kubectx
 kubectl krew install tree view-utilization view-allocations access-matrix who-can whoami neat get-all klock ktop node-shell oidc-login stern virt node-resource cond pods-on
 ```
