@@ -101,8 +101,6 @@ chmod 755 $HOME/.bin/*
 * iterm
   * Appearance > General > Theme = Compact
   * Preferences > Profiles > select your profile > Terminal tab > check "Silence bell"
-* Update Keyboard Shortcuts
-  * System Settings > Keyboard > Keyboard Shortcuts > Keyboard > "Move focus to active or next window" 
 
 # Moom Setup
 * MacBook 12"
