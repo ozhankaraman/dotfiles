@@ -55,6 +55,7 @@ brew 'kube-bench'
 # Containers
 brew 'kubernetes-cli'
 brew 'krew'
+brew 'kubectx'
 brew 'kind'
 brew 'kustomize'
 brew 'cfssl'
