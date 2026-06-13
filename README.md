@@ -98,6 +98,9 @@ chmod 755 $HOME/.bin/*
 * Install Moom from Apple Store
 * Setup Easy Move+Resize for Alt key
 * Enable hot corners on top right for sleep
+* iterm
+  * Appearance > General > Theme = Compact
+  * Preferences > Profiles > select your profile > Terminal tab > check "Silence bell" 
 
 # Moom Setup
 * MacBook 12"
