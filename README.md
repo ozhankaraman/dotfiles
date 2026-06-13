@@ -100,7 +100,9 @@ chmod 755 $HOME/.bin/*
 * Enable hot corners on top right for sleep
 * iterm
   * Appearance > General > Theme = Compact
-  * Preferences > Profiles > select your profile > Terminal tab > check "Silence bell" 
+  * Preferences > Profiles > select your profile > Terminal tab > check "Silence bell"
+* Update Keyboard Shortcuts
+  * System Settings > Keyboard > Keyboard Shortcuts > Keyboard > "Move focus to active or next window" 
 
 # Moom Setup
 * MacBook 12"
