@@ -6,7 +6,7 @@ GREEN='\033[0;32m'
 BLUE='\033[1;34m'
 RED='\033[0;31m'
 
-DOMAINS=("l88.zebrastack.com" "l112.zebrastack.com" "l104.zebrastack.com" "zz.zebrastack.com" "zebrastack.com")
+DOMAINS=("l88.zebrastack.com" "l112.zebrastack.com" "l100.zebrastack.com" "zz.zebrastack.com" "zebrastack.com")
 
 usage() {
     echo -e "${YELLOW}Usage:${NC} rs [user@]<host> [sftp] [-c]"
