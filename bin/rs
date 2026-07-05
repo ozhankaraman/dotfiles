@@ -132,7 +132,10 @@ main() {
         hostpart="$input"
     fi
 
-    if [[ "$hostpart" == *.* ]]; then
+    if [[ "$hostpart" =~ ^([0-9]{1,3}\.){3}[0-9]{1,3}$ ]]; then
+        fqdn="$hostpart"
+        ip="$hostpart"
+    elif [[ "$hostpart" == *.* ]]; then
         fqdn="$hostpart"
         ip=$(resolve_dns "$fqdn")
         if [[ -z "$ip" ]]; then
